@@ -1,0 +1,28 @@
+
+
+/*Cursos*/
+
+.curso{
+	padding: 3rem 0;
+	border-bottom: 1px solid var(--claro);
+}
+
+.curso:last-of-type{
+	border: none;
+}
+
+
+
+@media(min-width:768px){
+	.curso{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 2rem;
+	}
+    .curso__informacion .botones{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+}

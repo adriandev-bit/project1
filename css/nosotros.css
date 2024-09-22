@@ -1,0 +1,30 @@
+
+
+
+/*Sobre Nosotros*/
+
+/*@media(min-width:768px){
+	.sobre-nosotros{
+		display: flex;
+		justify-content: space-between;
+	}
+	.sobre-nosotros__imagen,
+	.sobre-nosotros__texto{
+		flex-basis: calc(50% - 1rem);			/*divide el contenido, mitad para cada elemento con espacio
+	}
+}*/
+
+@media(min-width:768px){
+	.sobre-nosotros{
+		display: flex;
+        flex-direction: row;
+    .sobre-nosotros__texto{
+        width: 500px;
+        padding: 10px;
+    }    
+    .sobre-nosotros__imagen{
+        width: 600px;
+        padding: 10px;
+    }
+	}
+}

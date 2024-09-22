@@ -1,0 +1,95 @@
+
+
+@media(min-width:768px){
+	.contenido-principal{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.entrada{
+	border-bottom: 1px solid var(--claro);
+	margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+	border: none;
+	margin: 0;
+}
+
+
+
+@media(min-width:768px){
+	.boton{
+		display: inline-block;        /*inline es inmune a los cambios de margin y width*/  /*block es inmune a colocar elemento a la derecha*/
+	}									/*inline-block no agrega cambios de width pero si de margin*/
+}
+
+.boton:hover{
+	cursor: pointer;
+}
+
+.boton--primario{
+	background-color: var(--font-blanco) ;
+}
+
+.boton--secundario{
+	background-color: var(--background-color-boton) ;
+	color: var(--font-blanco);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.cursos{
+	list-style: none;				/*elimina la viñetas o puntitos de los elementos de la lista*/
+}
+
+.widget-curso{
+	border-bottom: 1px solid var(--claro);
+	margin-bottom: 2rem;
+}
+
+.widget-curso__label, 
+.curso__label{
+	font-family: var(--fuenteHeading);
+	font-weight: 700;
+}
+
+.widget-curso__info,
+.curso__info{
+	font-weight: 400;
+}
+
+.footer{
+	background-color: var(--negro);
+	padding-bottom: 3rem;
+	margin-top: 4rem;
+}
+
+
+
+@media (min-width:768px){
+	.enviar{
+		width: auto;
+	}
+}
+
+
+/*Navegacion*/
+
+/*.navegacion{
+	display: block;
+}*/
+
+@media(min-width:768px){
+	.navegacion{
+		display: flex;				/* coloca los elementos de izq a derecha, por defecto es display: block*/
+		gap: 2rem;
+	}
+}
+
+.navegacion__enlace{
+	display: block;					/*coloca los elementos uno por fila/row, block a cada elemento*/
+	text-align: center;
+	font-size: 1.8rem;
+	color: var(--font-blanco);   
+}
